@@ -10,25 +10,33 @@ let emaillist = ['tizio@email.com', 'caio@email.com', 'sempronio@email.com', 'ma
 
 console.log('emaillist', emaillist, emaillist.length);
 
-let usermail = (prompt('Digita la tua email'));
+let usermail = document.getElementById('inputmail');
 
+const invio = document.getElementById('send');
 
-for (let i = 0; i < emaillist.length; i++) {
+invio.addEventListener('click',
+    function () {
+        for (let i = 0; i < emaillist.length; i++) {
 
-    if (usermail == emaillist[i]) {
-
-        alert('La tua email è nella lista');
-        console.log('La tua email è nella lista');
-
-        i = emaillist.length;
+            if (usermail.value == emaillist[i]) {
+        
+                document.getElementById('output').innerHTML = 'La tua email è nella lista';
+                console.log('La tua email è nella lista');
+        
+                i = emaillist.length;
+            }
+            else if (i == emaillist.length - 1) {
+        
+                document.getElementById('output').innerHTML = 'La tua email non è nella lista';
+                console.log('La tua email non è nella lista');
+            };
+            
+        };
     }
-    else if (i == emaillist.length - 1) {
+);
 
-        alert('La tua email non è nella lista');
-        console.log('La tua email non è nella lista');
-    };
-    
-};
+
+
 
 // if (usermail == emaillist[0] || 
 //     usermail == emaillist[1] ||
