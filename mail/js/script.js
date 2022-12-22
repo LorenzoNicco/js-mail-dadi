@@ -12,19 +12,36 @@ console.log('emaillist', emaillist, emaillist.lenght);
 
 let usermail = (prompt('Digita la tua email'));
 
-if (usermail == emaillist[0] || 
-    usermail == emaillist[1] ||
-    usermail == emaillist[2] ||
-    usermail == emaillist[3] ||
-    usermail == emaillist[4]) {
+// if (usermail == emaillist[0] || 
+//     usermail == emaillist[1] ||
+//     usermail == emaillist[2] ||
+//     usermail == emaillist[3] ||
+//     usermail == emaillist[4]) {
 
-    alert('La tua email è nella lista');
+//     alert('La tua email è nella lista');
 
-    console.log('La tua email è nella lista');
-    console.log('usermail', usermail);
-}
-else {
-    alert('La tua email non è nella lista');
+//     console.log('La tua email è nella lista');
+//     console.log('usermail', usermail);
+// }
+// else {
+//     alert('La tua email non è nella lista');
 
-    console.log('La tua email non è nella lista');
-};
+//     console.log('La tua email non è nella lista');
+// };
+
+// let risposta = 
+
+// for (i = 0; i < 5; i ++) {
+
+//     if (usermail == emaillist[i]) {
+//         risposta = 'funziona';
+        
+//     }
+//     else {
+//         risposta = 'non funziona';
+//     }
+
+//     console.log(risposta)
+
+// }
+
